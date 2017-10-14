@@ -18,7 +18,16 @@ class ArticleController extends Controller
     }
 
     public function store(Request $request){
-        Article::create($request->all());
+        $data = $this->validate($request,[
+            'title' => 'required',
+            'body'  => 'required'
+        ],
+        [
+            'title.required'    => 'Title is required',
+            'body.required'     => 'Body is required'
+        ]);
+        $data = $request->all();
+        Article::create($data);
         return redirect()->route('article.index')
                          ->with('success', 'Article created successfuly');
     }

@@ -7,6 +7,9 @@
 				'class'		  => 'form-control'
 			)) !!}
 		</div>
+		@if ($errors->has('title'))
+		<span class="text-danger">{{ $errors->first('title') }}</span>
+		@endif
 	</div>
 	<div class="col-lg-12">
 		<div class="form-group">
@@ -16,6 +19,9 @@
 				'class'			=> 'form-control'
 			)) !!}
 		</div>
+		@if ($errors->has('body'))
+		<span class="text-danger">{{ $errors->first('body') }}</span>
+		@endif
 	</div>
 	<div class="col-lg-12">
 		<button type="submit" class="btn btn-primary">Submit</button>
