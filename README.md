@@ -21,13 +21,8 @@ http://localhost:8080
 | Dir |
 |---|
 | resources/views/article/  | 
-|---|
 | create.blade.php |
-|---|
 | edit.blade.php |
-|---|
 | form.blade.php |
-|---|
 | index.blade.php |
-|---|
 | show.blade.php |
