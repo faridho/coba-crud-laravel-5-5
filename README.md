@@ -18,9 +18,8 @@ http://localhost:8080
 
 # Views
 
-| Dir |
-|---|
 | resources/views/article/  | 
+|---|
 | create.blade.php |
 | edit.blade.php |
 | form.blade.php |
